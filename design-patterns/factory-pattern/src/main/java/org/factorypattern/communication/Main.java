@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Welcome to factory pattern!!!!");
 
         NotificationFactory notificationFactory = new NotificationFactory();
-        INotification notification = notificationFactory.createNotification("SMS");
+        INotification notification = notificationFactory.createNotification(CommunicationMode.sms);
         notification.notifyUser();
     }
 }
